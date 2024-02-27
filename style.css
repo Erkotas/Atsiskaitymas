@@ -70,12 +70,12 @@ body {
 }
 @media screen and (max-width: 375px) {
   .container-3 {
-    padding: 0;
+    padding: 3px;
   }
 }
 @media screen and (max-width: 900px) {
   .container-3 {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -86,6 +86,11 @@ body {
 .button-primary {
   background-image: linear-gradient(to right, #647B64, #66AC66);
   color: white;
+}
+
+.button.button-primary.section-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-button {
@@ -241,7 +246,7 @@ body {
 .hero .hero-content .hero-button-wrapper .hero-button::after {
   padding-left: 142px;
   color: white;
-  content: url("../images/arrow.svg");
+  content: url("./images/arrow.svg");
 }
 @media screen and (max-width: 375px) {
   .hero .hero-content .hero-button-wrapper .hero-button::after {
@@ -367,7 +372,7 @@ body {
 }
 .services .services-content a::after {
   color: white;
-  content: url("../images/arrow.svg");
+  content: url("./images/arrow.svg");
 }
 @media screen and (max-width: 375px) {
   .services .services-content a::after {
@@ -516,7 +521,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  overflow-x: scroll;
   overflow-y: clip;
   overflow-clip-margin: 1em;
 }
@@ -634,7 +638,7 @@ body {
 }
 .contributors .contributor-content a::after {
   color: white;
-  content: url("../images/arrow.svg");
+  content: url("./images/arrow.svg");
 }
 @media screen and (max-width: 375px) {
   .contributors .contributor-content a::after {
@@ -788,7 +792,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  overflow-x: scroll;
 }
 .collection .collection-cards .collection-card {
   position: relative;
@@ -868,6 +871,8 @@ footer {
 footer .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 @media screen and (max-width: 375px) {
   footer .footer-wrapper {
@@ -881,6 +886,8 @@ footer .footer-wrapper {
   footer .footer-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 15px;
   }
 }
 footer .footer-wrapper p {
@@ -1038,7 +1045,7 @@ footer .footer-wrapper .footer-section-4 a {
 }
 footer .footer-wrapper .footer-section-4 a::after {
   color: white;
-  content: url("../images/arrow.svg");
+  content: url("./images/arrow.svg");
 }
 @media screen and (max-width: 375px) {
   footer .footer-wrapper .footer-section-4 a::after {

@@ -20,6 +20,9 @@ footer {
       @include responsive.md {
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 20px;
+        margin: 15px;
+
       }
   
       & p {
@@ -198,7 +201,7 @@ footer {
               padding-left: 20px;
             }
             color: variables.$color-white;
-            content: url("images/arrow.svg");
+            content: url("./images/arrow.svg");
           }
         }
       }

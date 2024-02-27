@@ -56,10 +56,10 @@ body {
   }
 
   @include responsive.sm {
-    padding: 0;
+    padding: 3px;
   }
   @include responsive.md {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -71,7 +71,10 @@ body {
   background-image: variables.$primary-button;
   color: variables.$color-white;
 }
-
+.button.button-primary.section-button {
+  display: flex;
+  justify-content: space-between;
+}
 .section-button {
   text-transform: uppercase;
   padding: 26px 29px;
